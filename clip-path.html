@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>       
+.clip-path{
+    width: 100%;
+    height: 90vh;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, #000000,#ff7003b4), url(skywaves.png);
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+}
+.content h1{
+    text-align: center;
+    margin-top: 200px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    animation-name: A;
+    animation-duration: 1s;
+}
+@keyframes A{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.content p{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    animation-name: B;
+    animation-duration: 1s;
+}
+@keyframes B{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+.logo{
+    font-size: 80px;
+    color: orange;
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    margin-left: 680px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+    opacity: 0;
+    transform: translateY(30px);
+    }
+
+    100% {
+    opacity: 1;
+    transform: translateY(0px);
+    }
+}
+.card-section{
+    margin-top: 200px;
+    margin-left: 200px;
+  
+
+}
+.card1{
+  width: 100%;
+  height: 100%;
+  background-color: #28666e;
+}
+
+.about-section{
+ width: 100%;
+ height: 600px;
+ margin-top: 100px;
+ box-sizing: border-box;
+ 
+}
+.row{
+    position: relative;
+}
+.header{
+width: 20%;
+height: 10%;
+font-size:xx-large;
+color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+border: solid 10px orange;
+border-radius: 20px;
+background-color: black;
+margin-left: 600px;
+font-weight: bolder;
+transition: transform 0.2s ease-in;
+}
+.header:hover{
+     transform: scale(1.5); 
+     color: orange;
+}
+.colunm{
+    position: relative;
+}
+.info-section{
+width: 40%;
+height: 80%; 
+float: left;
+font-size: x-large;
+font-style: italic;
+margin-left: 20px;
+margin-top: 70px;
+box-sizing: border-box;
+}
+.img-section{
+width: 30%;
+height: 30%; 
+float: right;
+margin-top: 100px;
+transition: transform .2s ease-in;   
+}
+.img-section:hover{
+      transform: scale(0.75);  
+}
+.colunm2{
+    position: relative;
+}
+.img-section1{
+width: 10%;
+margin-top: 50px;
+position: absolute;
+transition: transform .2s;
+}
+.img-section1:hover{
+    transform: scale(1.5); 
+}
+.img-section2{
+width: 10%;    
+margin-left: 100px;
+transition: transform .2s;  
+}
+.img-section2:hover{
+    transform: scale(1.5);   
+}
+.img-section3{
+width: 10%;   
+margin-left: 100px;  
+transition: transform .2s;
+}
+.img-section3:hover{
+    transform: scale(1.5);   
+}
+.clip-path2{
+ width: 100%;
+ height: 100vh;
+ border: 2px solid black;   
+ background-image: url(faculty.png); 
+ background-size: cover;
+ clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+ }
+ p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.container {
+  color: white;
+  font-size: 2.26rem;
+  width: 30%;
+  margin-left: 550px;
+  text-transform: uppercase;
+  height: 10vh;
+  background-color: rgb(8, 8, 8);
+  border: solid 5px rgb(255, 132, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color: orangered;
+}
+.second div {
+  background-color: orange;
+}
+.third div {
+  background-color: gold;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+.clip-path3{
+ width: 100%;
+ height: 100vh;
+ border: 2px solid black;   
+ background-color: #000000; 
+ background-size: cover;
+ clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+}
+.header2{
+width: 20%;
+height: 80px;
+font-size: xx-large;
+color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+border: solid 10px orange;
+border-radius: 20px;
+background-color: black;
+margin-left: 600px;
+margin-bottom: 20px;
+font-weight: bolder;
+transition: transform 0.2s ease-in;
+}
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  margin-top: 250px;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+.clip-path4{
+ width: 100%;
+ height: 100vh;
+ border: 2px solid black;   
+ background-image: url(review.jpg); 
+ background-size: cover;
+ clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+}
+.header3{
+width: 20%;
+height: 70px;
+font-size:xx-large;
+color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+border: solid 10px orange;
+border-radius: 20px;
+background-color: black;
+margin-left: 600px;
+margin-top: 50px;
+font-weight: bolder;
+transition: transform 0.2s ease-in;
+}
+.review-section1{
+ width: 50%;
+ height: 30%;
+ border: 5px solid black;
+ border-radius: 20px;
+ margin-top: 260px;
+ margin-left: 50px;
+}
+.review1{
+width: 50%;
+height: 80%;
+float: right;
+font-size: larger;
+font-style: italic;
+margin-top: 20px;
+#more {display: none;}
+}
+.review-img1{
+width: 12%;
+height: 40%;
+float: left;
+background-image: url(unknown-person1.png);
+background-size: cover;
+border: 5px solid white;
+border-radius: 500px;
+margin-left: 80px;
+margin-top: 40px;
+}
+.review-section2{
+ width: 50%;
+ height: 30%;
+ border: 5px solid black;
+ border-radius: 20px;
+ margin-top: 20px;
+ margin-left: 50px;
+}
+.review2{
+width: 50%;
+height: 80%;
+float: right;
+font-size: larger;
+font-style: italic;
+margin-top: 20px;
+#more {display: none;}
+}
+.review-img2{
+width: 12%;
+height: 40%;
+float: left;
+background-image: url(unknown-person2.png);
+background-size: cover;
+border: 5px solid white;
+border-radius: 500px;
+margin-left: 80px;
+margin-top: 40px;
+}
+.rating {
+     width: 200px;
+     height: 40px;
+     float: right;
+     margin-top: 30px;
+     margin-right: 10px;
+}
+ .rating label {
+     float: right;
+     position: relative;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+}
+ .rating label:not(:first-of-type) {
+     padding-right: 2px;
+}
+ .rating label:before {
+     content: "\2605";
+     font-size: 30px;
+     color: #ccc;
+     line-height: 1;
+}
+ .rating input {
+     display: none;
+}
+ .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+     color: #f9df4a;
+}
+.rating2 {
+     width: 200px;
+     height: 40px;
+     float: right;
+     margin-top: 30px;
+     margin-right: 10px;
+}
+ .rating2 label {
+     float: right;
+     position: relative;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+}
+ .rating2 label:not(:first-of-type) {
+     padding-right: 2px;
+}
+ .rating2 label:before {
+     content: "\2605";
+     font-size: 30px;
+     color: #ccc;
+     line-height: 1;
+}
+ .rating2 input {
+     display: none;
+}
+ .rating2 input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+     color: #f9df4a;
+}
+</style>
+</head>
+<body>
+<div class="clip-path">
+        <div class="logo"><i class="fa fa-connectdevelop"> Global</i></div>
+        <div class="content">
+         <h1>Global IT Institute</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore eaque sint
+             voluptas. Optio, non eligendi ratione veni</p>
+        </div>
+        <a href="#" class="btn btn-white btn-animate"> 
+         Get Registered
+        </a>
+</div>
+<main class="container">
+    <p>Our</p>
+    <section class="animation">
+      <div class="first"><div>Faculity</div></div>
+      <div class="second"><div>Staff</div></div>
+      <div class="third"><div>Teacher</div></div>
+    </section>
+  </main>
+</div> 
+
+<div class="clip-path3">
+    <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://media.istockphoto.com/id/1003228586/photo/office-room-of-many-desktop-computers.jpg?s=612x612&w=0&k=20&c=8RYTug1FH6Oqa3gUciiU838muAaxvvLvPMvYiZ7FsAo=" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Computer Lab</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://img.freepik.com/free-photo/young-handsome-man-holding-notebooks-concept-e-learning-courses_1258-26588.jpg?w=2000" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Proffesional Staff</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://blog-cdn.el.olx.com.pk/wp-content/uploads/2022/10/31124538/Transfer-Fee-O.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Affordable fees</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>         
+  </div>
+  <div class="header3">Reviews</div>
+  <div class="clip-path4"> 
+   <div class="review-section1">
+    <div class="review1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum
+       nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
+         ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+          ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
+           Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+           <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+     <div class="review-img1"></div>
+     
+     <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+      <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+      <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+      <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+      <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+  </div> 
+   </div>
+   
+  <div class="review-section2">
+    <div class="review2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum
+       nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
+         ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+          ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
+           Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+           <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+     <div class="review-img2"></div>
+     <div class="rating2">
+      <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+      <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+      <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+      <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+      <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+  </div> 
+   </div>
+  </div> 
+</div>    
+      
+
+</body>
+</html>
